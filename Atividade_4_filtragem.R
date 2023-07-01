@@ -6,7 +6,7 @@ library(dplyr)
 library(lubridate)
 library(stringr)
 
-dados <- read.csv("Atividades/Dados")
+dados <- read.csv("Dados/Pokemon_full.csv")
 head(dados) #? vê as primeiras linhas de dados
 
 dados %>% filter(grepl("bee", name) | grepl("saur", name))
